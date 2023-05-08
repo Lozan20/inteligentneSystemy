@@ -1,0 +1,11 @@
+{% comment %} {% extends "base_generic.html" %} {% endcomment %}
+
+{% block content %}
+  <h1>Rekomendacje części samochodowych</h1>
+
+  <ul>
+    {% for recommendation in recommendations %}
+      <li>{{ recommendation }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
