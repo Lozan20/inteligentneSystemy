@@ -13,6 +13,6 @@ def recommendations(request):
     HttpResponse: Rendered template with recommendations.
     """
     # recommendations = generate_recommendations()
-    recommendations = ["Break", "engines"]
+    recommendations = ["Break", "Suspension","Exhaust"]
     context = {"recommendations": recommendations}
     return render(request, "car_repair_app/templates/recommendations.html", context)
